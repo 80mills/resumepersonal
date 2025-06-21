@@ -41,7 +41,7 @@ export interface SkillCategory {
 
 export interface Skill {
   name: string;
-  level: number; // 1-10
+  level: string; // Changed from number to descriptive string
   category: string;
 }
 
@@ -56,12 +56,12 @@ export interface Initiative {
 
 export const resumeData: ResumeData = {
   name: "Pearson Gardner",
-  title: "Senior Human Resources Manager",
-  about: `I'm a senior HR professional with over 7 years of experience driving organizational transformation and building comprehensive HR infrastructure. My expertise spans the entire HR spectrum, from strategic talent management to compliance and HRIS implementation.
+  title: "Senior Manager, Human Resources",
+  about: `Results-driven HR professional with 7+ years of experience elevating organizational performance through strategic initiatives in manufacturing and defense contracting environments. Currently serving as the first HR employee at Ohio Ordnance Works, where I've built comprehensive HR infrastructure while ensuring compliance with defense industry regulations.
 
-I specialize in manufacturing environments and defense contracting, with a proven track record of establishing HR functions from the ground up and modernizing existing operations. My approach combines deep HR knowledge with business acumen to create sustainable, scalable solutions.
+My expertise includes implementing HRIS platforms, developing compensation frameworks, managing complex employee relations, and driving organizational change. I've successfully partnered with executives at both mid-size and Fortune 500 companies to align HR strategy with business objectives.
 
-What sets me apart is my ability to bridge the gap between HR strategy and business outcomes. I don't just manage HR processes—I build systems that drive organizational success. Whether it's implementing comprehensive compliance frameworks, designing compensation structures, or leading digital transformation initiatives, I bring a strategic perspective to every challenge.`,
+Previous experience includes serving as an HR Business Partner for Eaton Corporation's global finance functions (550+ employees) and managing HR operations for manufacturing facilities. Graduate of West Virginia University's Industrial Labor Relations program with international experience from the University of Strasbourg.`,
   location: "Chardon, OH",
   email: "pearsonmgardner@gmail.com",
   phone: "+1 (229) 326-5027",
@@ -75,12 +75,14 @@ What sets me apart is my ability to bridge the gap between HR strategy and busin
       startDate: "2024-01",
       endDate: "Present",
       achievements: [
-        "Built comprehensive HR infrastructure as first HR employee for 100+ person defense contractor",
-        "Closed 30+ compliance risk areas within first six months, establishing proper documentation practices",
-        "Implemented Rippling HRIS platform in 3 months, reducing administrative time by 60%",
-        "Developed formal job banding structure and performance-based compensation systems"
+        "Established HR function as first HR employee for 100+ person defense contractor manufacturing tactical weaponry",
+        "Conducted comprehensive compliance review, closing 30+ regulatory risk areas within first six months (EEOC, FLSA, FMLA)",
+        "Implemented Rippling HRIS platform in 3 months, reducing administrative time by 60% through automation",
+        "Developed data-driven compensation framework with formal job banding and market-aligned pay structures",
+        "Enhanced benefits package including purchased vacation option and modernized PTO accrual system",
+        "Created manager training programs for FMLA/ADA request handling and documentation procedures"
       ],
-      competencies: ["HR Infrastructure", "Compliance Management", "HRIS Implementation", "Compensation Design"],
+      competencies: ["HR Infrastructure Development", "Regulatory Compliance", "HRIS Implementation", "Compensation & Benefits"],
       logo: {
         light: "/logos/ohio-ordnance-logo-color.png",
         dark: "/logos/ohio-ordnance-logo-white.png"
@@ -92,12 +94,14 @@ What sets me apart is my ability to bridge the gap between HR strategy and busin
       startDate: "2021-01",
       endDate: "2024-01",
       achievements: [
-        "HR Business Partner for global corporate finance functions with 550+ employees",
-        "Implemented biannual compensation reviews reducing turnover to 10-12% vs market",
-        "Led organizational design initiatives for Treasury and Compliance functions",
-        "Created talent councils and career frameworks for 5000+ corporate employees"
+        "Served as strategic HR partner for global corporate finance functions totaling 550+ employees across Tax, Treasury, Audit, and Operations Finance",
+        "Implemented biannual compensation review processes, maintaining 10-12% turnover rate compared to market average",
+        "Filled 60+ professional roles in 7 months with nearly 100% voluntary retention after one year",
+        "Utilized PowerBI dashboards and large datasets to provide comprehensive talent analytics for CFO and Finance SLT",
+        "Led organizational design initiatives supporting finance transformation, including outsourcing of transactional work",
+        "Deployed career framework and talent councils across 5000+ corporate employees using SAP SuccessFactors"
       ],
-      competencies: ["Talent Management", "Organizational Design", "Compensation Strategy", "Change Management"],
+      competencies: ["Strategic Talent Management", "Data Analytics", "Organizational Design", "Executive Partnership"],
       logo: "/logos/eaton-logo.png"
     },
     {
@@ -106,12 +110,14 @@ What sets me apart is my ability to bridge the gap between HR strategy and busin
       startDate: "2019-01",
       endDate: "2021-01",
       achievements: [
-        "HR supervisor for 350-person manufacturing facility within Vehicle Group",
-        "Successfully campaigned for Voluntary Reduction in Force and managed workforce reskilling",
-        "Reduced CNC machining training time from 12 weeks to 6 weeks",
-        "Updated employee guidebook for first time in 25 years using ADKAR change management"
+        "Managed HR operations for 350-person Vehicle Group manufacturing facility as member of plant leadership team",
+        "Designed and led workforce reskilling initiative, reducing CNC machining training time from 12 to 6 weeks",
+        "Successfully advocated for and managed Voluntary Reduction in Force during business line transfer",
+        "Led first major employee guidebook revision in over two decades using ADKAR change management methodology",
+        "Created retention interview programs and recognition initiatives, exceeding participation goals by 10%",
+        "Managed reduction in force and recall processes while maintaining production quality and safety standards"
       ],
-      competencies: ["Manufacturing HR", "Workforce Planning", "Training & Development", "Employee Relations"],
+      competencies: ["Manufacturing Operations", "Workforce Planning", "Training Development", "Change Management"],
       logo: "/logos/eaton-logo.png"
     },
     {
@@ -120,12 +126,14 @@ What sets me apart is my ability to bridge the gap between HR strategy and busin
       startDate: "2017-01",
       endDate: "2019-01",
       achievements: [
-        "Elite rotational program developing cross-functional HR leadership capabilities",
-        "Created four part-time shifts increasing headcount by 100 employees at Crouse-Hinds",
-        "Provided critical support during collective bargaining negotiations at Cooper Lighting",
-        "Secured $30,000 in community grants while increasing United Way contributions by 15%"
+        "Completed rotational assignments across multiple business units developing cross-functional HR expertise",
+        "Created four part-time production shifts at Crouse-Hinds, increasing headcount by 100 while avoiding $100K in annual overhead",
+        "Secured $30,000 in community grants and increased United Way contributions by 15% at Roanoke facility",
+        "Provided strategic support during collective bargaining negotiations at Cooper Lighting",
+        "Founded employee resource groups to improve labor-management relations",
+        "Led policy standardization initiatives across departments"
       ],
-      competencies: ["Leadership Development", "Labor Relations", "Community Relations", "Strategic Planning"],
+      competencies: ["Leadership Development", "Labor Relations", "Community Engagement", "Project Management"],
       logo: "/logos/eaton-logo.png"
     }
   ],
@@ -135,71 +143,94 @@ What sets me apart is my ability to bridge the gap between HR strategy and busin
       degree: 'MS, Industrial Labor Relations',
       startDate: '2016',
       endDate: '2017',
-      description: 'Semester Abroad: University of Strasbourg (2016)'
+      description: 'Semester Abroad: University of Strasbourg, France (2016)'
     },
     {
       institution: 'Georgia Southern University',
       degree: 'BA, Political Science and French',
       startDate: '2011',
       endDate: '2015',
+      description: 'Young Alumni Board Member (2023 – Present)'
     }
   ],
   skills: [
     {
-      name: "Strategic HR",
+      name: "HR Strategy & Leadership",
       skills: [
-        { name: "Talent Management", level: 9, category: "Strategic HR" },
-        { name: "Organizational Design", level: 8, category: "Strategic HR" },
-        { name: "Compensation Strategy", level: 9, category: "Strategic HR" },
-        { name: "Change Management", level: 8, category: "Strategic HR" }
+        { name: "Talent Management", level: "Advanced", category: "Strategic HR" },
+        { name: "Organizational Design", level: "Advanced", category: "Strategic HR" },
+        { name: "Compensation Strategy", level: "Advanced", category: "Strategic HR" },
+        { name: "Change Management (ADKAR)", level: "Proficient", category: "Strategic HR" },
+        { name: "Executive Partnership", level: "Advanced", category: "Strategic HR" }
       ],
       featured: true
     },
     {
-      name: "HR Operations",
+      name: "HR Operations & Compliance",
       skills: [
-        { name: "HRIS Implementation", level: 9, category: "HR Operations" },
-        { name: "Compliance Management", level: 9, category: "HR Operations" },
-        { name: "Employee Relations", level: 8, category: "HR Operations" },
-        { name: "Performance Management", level: 8, category: "HR Operations" }
+        { name: "HRIS Implementation (Rippling)", level: "Advanced", category: "HR Operations" },
+        { name: "Compliance Management (EEOC, FLSA, FMLA)", level: "Expert", category: "HR Operations" },
+        { name: "Employee Relations", level: "Advanced", category: "HR Operations" },
+        { name: "Performance Management", level: "Advanced", category: "HR Operations" },
+        { name: "Benefits Administration", level: "Proficient", category: "HR Operations" }
       ],
       featured: true
     },
     {
-      name: "Manufacturing & Defense",
+      name: "Technology & Analytics",
       skills: [
-        { name: "Manufacturing HR", level: 9, category: "Industry" },
-        { name: "Defense Contracting", level: 8, category: "Industry" },
-        { name: "Workforce Planning", level: 8, category: "Industry" },
-        { name: "Safety & Compliance", level: 7, category: "Industry" }
+        { name: "SAP SuccessFactors", level: "Proficient", category: "Technology" },
+        { name: "PowerBI Analytics", level: "Proficient", category: "Technology" },
+        { name: "Rippling HRIS", level: "Advanced", category: "Technology" },
+        { name: "Data-Driven Decision Making", level: "Advanced", category: "Technology" },
+        { name: "HR Metrics & Reporting", level: "Advanced", category: "Technology" }
       ],
       featured: true
+    },
+    {
+      name: "Industry Expertise",
+      skills: [
+        { name: "Manufacturing HR", level: "Expert", category: "Industry" },
+        { name: "Defense Contracting", level: "Proficient", category: "Industry" },
+        { name: "Workforce Planning", level: "Advanced", category: "Industry" },
+        { name: "Labor Relations", level: "Proficient", category: "Industry" },
+        { name: "Safety Compliance", level: "Intermediate", category: "Industry" }
+      ],
+      featured: false
     }
   ],
   initiatives: [
     {
-      name: "HR Infrastructure Build",
-      description: "Established comprehensive HR function from scratch for growing defense contractor, implementing all policies, systems, and processes",
-      competencies: ["HR Infrastructure", "Compliance Management", "Policy Development", "HRIS Implementation"],
+      name: "Defense Contractor HR Infrastructure Development",
+      description: "Built comprehensive HR function from ground up as first HR employee, establishing all policies, procedures, and systems for 100+ person defense manufacturer",
+      competencies: ["Compliance Management", "Policy Development", "HRIS Implementation", "Risk Mitigation"],
       image: "/projects/hr-infrastructure.jpg",
-      impact: "Closed 30+ compliance risk areas, established proper documentation practices, reduced legal exposure",
+      impact: "Closed 30+ compliance gaps, established EEO-1 and Affirmative Action Plan filing processes, significantly reduced legal exposure",
       featured: true
     },
     {
-      name: "Compensation Framework Design",
-      description: "Developed and implemented formal job banding structure with performance-based merit and bonus systems",
-      competencies: ["Compensation Strategy", "Job Analysis", "Market Analysis", "Performance Management"],
+      name: "Market-Aligned Compensation Framework",
+      description: "Conducted comprehensive market analysis and developed formal job banding structure with performance-based merit and bonus systems for defense contractor",
+      competencies: ["Compensation Analysis", "Market Research", "Job Evaluation", "Pay Equity"],
       image: "/projects/compensation.jpg",
-      impact: "Eliminated compensation disparities, improved retention, aligned pay systems with fiscal planning",
+      impact: "Established transparent pay structure for 100+ employees, eliminated compensation disparities, enabled strategic workforce planning",
       featured: true
     },
     {
-      name: "HRIS Digital Transformation",
-      description: "Implemented comprehensive Rippling HRIS platform centralizing payroll, time tracking, benefits, and employee records",
-      competencies: ["HRIS Implementation", "Digital Transformation", "Process Optimization", "Data Analytics"],
-      image: "/projects/hris.jpg",
-      impact: "Streamlined operations, reduced administrative time by 60%, improved analytics and decision-making",
+      name: "Finance Function Talent Transformation",
+      description: "Led talent initiatives for 550+ employee global finance organization, implementing compensation reviews, talent councils, and succession planning",
+      competencies: ["Talent Strategy", "Succession Planning", "Data Analytics", "Organizational Development"],
+      image: "/projects/talent-transformation.jpg",
+      impact: "Achieved 10-12% turnover vs market average, filled 60+ roles with near 100% retention, built robust succession plans",
       featured: true
+    },
+    {
+      name: "Manufacturing Workforce Reskilling",
+      description: "Designed and implemented comprehensive reskilling program transitioning assembly workers to CNC machinists during business line transfer",
+      competencies: ["Training Design", "Workforce Planning", "Change Management", "Manufacturing Operations"],
+      image: "/projects/workforce-reskilling.jpg",
+      impact: "Reduced training time by 50% (12 to 6 weeks), maintained production quality, achieved single recordable injury rate",
+      featured: false
     }
   ],
   cvUrl: "/Pearson_Gardner_Resume.pdf"

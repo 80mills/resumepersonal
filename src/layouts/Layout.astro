@@ -25,6 +25,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		
+		<!-- Cloudflare Turnstile -->
+		<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+		
 		<script is:inline>
 			// Prevent theme flashing by applying theme before page renders
 			(function() {
@@ -41,7 +45,59 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		</script>
 	</head>
 	<body class="bg-gray-50 dark:bg-gray-900 font-sans">
+		<!-- Cloudflare Turnstile Challenge Container -->
+		<div id="turnstile-challenge" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" style="display: none;">
+			<div class="bg-white dark:bg-gray-800 rounded-lg p-8 max-w-md mx-4 text-center">
+				<h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Security Check</h2>
+				<p class="text-gray-600 dark:text-gray-300 mb-6">Please complete this security challenge to continue.</p>
+				<div class="flex justify-center">
+					<div class="cf-turnstile" data-sitekey="0x4AAAAAABh0j6d-lAdejZxt" data-callback="turnstileCallback"></div>
+				</div>
+			</div>
+		</div>
+		
 		<slot />
+		
+		<script is:inline>
+			// Cloudflare Turnstile Implementation
+			(function() {
+				// Show the challenge container
+				const challengeContainer = document.getElementById('turnstile-challenge');
+				const mainContent = document.body;
+				
+				if (challengeContainer) {
+					challengeContainer.style.display = 'flex';
+					mainContent.style.overflow = 'hidden';
+				}
+				
+				// Handle Turnstile callback
+				window.turnstileCallback = function(token) {
+					// Hide the challenge container
+					if (challengeContainer) {
+						challengeContainer.style.display = 'none';
+						mainContent.style.overflow = 'auto';
+					}
+					
+					// Store the token for potential server-side verification
+					localStorage.setItem('turnstile_token', token);
+					
+					// Optional: Send token to your server for verification
+					// fetch('/api/verify-turnstile', {
+					//   method: 'POST',
+					//   headers: { 'Content-Type': 'application/json' },
+					//   body: JSON.stringify({ token: token })
+					// });
+				};
+				
+				// Auto-hide challenge after 30 seconds if no interaction (fallback)
+				setTimeout(function() {
+					if (challengeContainer && challengeContainer.style.display === 'flex') {
+						challengeContainer.style.display = 'none';
+						mainContent.style.overflow = 'auto';
+					}
+				}, 30000);
+			})();
+		</script>
 	</body>
 </html>
 

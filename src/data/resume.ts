@@ -22,7 +22,7 @@ export interface ExperienceItem {
   endDate: string;
   achievements: string[];
   competencies: string[];
-  logo?: string;
+  logo?: string | { light: string; dark: string };
 }
 
 export interface EducationItem {
@@ -81,7 +81,10 @@ What sets me apart is my ability to bridge the gap between HR strategy and busin
         "Developed formal job banding structure and performance-based compensation systems"
       ],
       competencies: ["HR Infrastructure", "Compliance Management", "HRIS Implementation", "Compensation Design"],
-      logo: "/logos/ohio-ordnance-logo.png"
+      logo: {
+        light: "/logos/ohio-ordnance-logo-color.png",
+        dark: "/logos/ohio-ordnance-logo-white.png"
+      }
     },
     {
       company: "Eaton Corporation",

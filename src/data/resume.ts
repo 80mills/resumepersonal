@@ -57,11 +57,11 @@ export interface Initiative {
 export const resumeData: ResumeData = {
   name: "Pearson Gardner",
   title: "Senior Manager, Human Resources",
-  about: `Results-driven HR professional with 7+ years of experience elevating organizational performance through strategic initiatives in manufacturing and defense contracting environments. Currently serving as the first HR employee at Ohio Ordnance Works, where I've built comprehensive HR infrastructure while ensuring compliance with defense industry regulations.
+  about: `Strategic HR leader who builds sophisticated people infrastructure from first principles. As the founding HR professional at Ohio Ordnance Works (defense manufacturing), I architected the entire HR function from zero—closing 30+ compliance gaps, implementing HRIS in 3 months, and reducing administrative burden by 60% while scaling the organization. Previously served as a critical partner in organizational transformation at Eaton ($130B industrial giant), partnering with C-suite executives to redesign talent strategies impacting 1,500+ employees globally.
 
-My expertise includes implementing HRIS platforms, developing compensation frameworks, managing complex employee relations, and driving organizational change. I've successfully partnered with executives at both mid-size and Fortune 500 companies to align HR strategy with business objectives.
+Known for bridging technical and corporate worlds, I excel at creating elegant HR solutions for complex, regulated industries. My approach: question assumptions, design what actually works, and use data to iterate—not to replace judgment. Whether transforming assembly workers into CNC machinists in 6 weeks or building compensation frameworks that balance Silicon Valley and shop floor, I deliver HR programs that accelerate business growth without adding bureaucracy.
 
-Previous experience includes serving as an HR Business Partner for Eaton Corporation's global finance functions (550+ employees) and managing HR operations for manufacturing facilities. Graduate of West Virginia University's Industrial Labor Relations program with international experience from the University of Strasbourg.`,
+MS Industrial Labor Relations (West Virginia University) with international experience at University of Strasbourg. Excel expert, HRIS implementation specialist, and perpetual learner.`,
   location: "Chardon, OH",
   email: "pearsonmgardner@gmail.com",
   phone: "+1 (229) 326-5027",

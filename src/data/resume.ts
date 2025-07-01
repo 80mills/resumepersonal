@@ -57,11 +57,15 @@ export interface Initiative {
 export const resumeData: ResumeData = {
   name: "Pearson Gardner",
   title: "Senior Manager, Human Resources",
-  about: `Strategic HR leader who builds sophisticated people infrastructure from first principles. As the founding HR professional at Ohio Ordnance Works (defense manufacturing), I architected the entire HR function from zero—closing 30+ compliance gaps, implementing HRIS in 3 months, and reducing administrative burden by 60% while scaling the organization. Previously served as a critical partner in organizational transformation at Eaton ($130B industrial giant), partnering with C-suite executives to redesign talent strategies impacting 1,500+ employees globally.
+  about: `Strategic HR leader specializing in business partnership, organizational transformation, and scalable systems. I help companies grow by aligning people strategy with business goals—backed by deep experience across operations, compliance, and change management.
 
-Known for bridging technical and corporate worlds, I excel at creating elegant HR solutions for complex, regulated industries. My approach: question assumptions, design what actually works, and use data to iterate—not to replace judgment. Whether transforming assembly workers into CNC machinists in 6 weeks or building compensation frameworks that balance Silicon Valley and shop floor, I deliver HR programs that accelerate business growth without adding bureaucracy.
+I began my career in frontline manufacturing HR—supporting the negotiation of union agreements, driving safety and compliance, and leading workforce transitions. While at Eaton, I took my next step as a global HR business partner, supporting named executive officers and senior finance leaders on transformation initiatives that impacted 1,500+ employees across five continents. From org redesigns to succession planning, I've helped leaders navigate complexity, build high-performing teams, and retain critical talent.
 
-MS Industrial Labor Relations (West Virginia University) with international experience at University of Strasbourg. Excel expert, HRIS implementation specialist, and perpetual learner.`,
+Most recently, as the first HR hire at a defense manufacturer, I built the entire HR function from the ground up. To scale without increasing headcount, I leaned into HR tech—implementing a full HRIS in 3 months, closing 30+ compliance gaps, and automating 60% of admin work. While technology isn't my core, I've developed strong fluency in systems design and process automation as tools to enable smarter, leaner HR delivery.
+
+I lead with principles, not playbooks—questioning assumptions, designing what actually works, and using data to drive outcomes without losing the human element.
+
+MS in Industrial Labor Relations (WVU), international experience in France, and a proven track record of delivering HR strategies that accelerate business results.`,
   location: "Chardon, OH",
   email: "pearsonmgardner@gmail.com",
   phone: "+1 (229) 326-5027",
